@@ -1,23 +1,31 @@
-.flex-container
+.grid-container
 {
 
     
-    background-color: rgb(219, 164, 164);
+    background-color: rgb(168, 78, 78);
     padding: 60px;
-   text-align: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-rows:  auto auto;
+    grid-template-columns: auto auto auto;
+   
+    grid-column-gap: 200px;
+    grid-row-gap: 40px; 
+    /* justify-content: first baseline; */
+   
+    /* flex-direction: row;
+    flex-wrap: wrap-reverse; */
   
 }
 
-.flex-container > div {
-    width: 100px;
+.grid-container > div {
+   
    text-align: center;
     height: 90px;
-    margin: 20px;
+    width: 100px;
+
+    /* margin: 10px; */
     font-size: 20px;
     font-weight: 50px;
     color: rgb(243, 241, 239);
-    background-color: rgb(240, 110, 212);
+    background-color: rgb(138, 70, 123);
 }
